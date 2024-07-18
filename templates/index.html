@@ -2,9 +2,37 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
     <title>Welcome</title>
 </head>
 <body>
-
+    <div class="container">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Valyuta</th>
+              <th scope="col">narx(uzs)</th>
+              <th scope="col">sana</th>
+            </tr>
+          </thead>
+          <tbody class="table-group-divider">
+            <tr>
+              <td>{{ dollar['ccy'] }}</td>
+              <td>{{ dollar['rate'] }}</td>
+              <td>{{ dollar['date'] }}</td>
+            </tr>
+            <tr>
+              <td>{{ euro['ccy'] }}</td>
+              <td>{{ euro['rate'] }}</td>
+              <td>{{ euro['date'] }}</td>
+            </tr>
+            <tr>
+              <td>{{ ruble['ccy'] }}</td>
+              <td>{{ ruble['rate'] }}</td>
+              <td>{{ ruble['date'] }}</td>
+            </tr>
+          </tbody>
+        </table>
+    </div>
 </body>
 </html>
